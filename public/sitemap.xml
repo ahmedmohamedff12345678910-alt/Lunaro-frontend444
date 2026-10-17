@@ -1,25 +1,46 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org">
+  <!-- خريطة الصفحات الرسمية والمحدثة برابط الفيرسيل الحقيقي لـ لونارو -->
   <url>
-    <loc>https://lunaro-com.vercel.app/</loc>
+    <loc>https://vercel.app</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/about</loc>
+    <loc>https://vercel.appportfolio.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/services</loc>
+    <loc>https://vercel.appservices.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/projects</loc>
+    <loc>https://vercel.appabout.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/contact</loc>
+    <loc>https://vercel.appcontact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/privacy</loc>
+    <loc>https://vercel.appprivacy</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://lunaro-com.vercel.app/terms</loc>
+    <loc>https://vercel.appterms</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
