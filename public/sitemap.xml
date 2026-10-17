@@ -1,11 +1,25 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lunarocom-rho.vercel.app/</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/about</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/services</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/projects</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/contact</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/privacy</loc></url>
-  <url><loc>https://lunarocom-rho.vercel.app/terms</loc></url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/about</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/services</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/projects</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/contact</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/privacy</loc>
+  </url>
+  <url>
+    <loc>https://lunaro-com.vercel.app/terms</loc>
+  </url>
 </urlset>
