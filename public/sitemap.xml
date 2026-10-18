@@ -15,6 +15,10 @@
   </url>
 
   <url>
+    <loc>https://lunaro-bice.vercel.app/projects</loc>
+  </url>
+
+  <url>
     <loc>https://lunaro-bice.vercel.app/about</loc>
   </url>
 
@@ -24,10 +28,6 @@
 
   <url>
     <loc>https://lunaro-bice.vercel.app/faq</loc>
-  </url>
-
-  <url>
-    <loc>https://lunaro-bice.vercel.app/projects</loc>
   </url>
 
 </urlset>
