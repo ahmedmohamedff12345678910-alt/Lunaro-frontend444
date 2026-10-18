@@ -1,34 +1,33 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org">
-  <!-- الخريطة النهائية الصافية والمعتمدة برابط مشروع لونارو الحقيقي -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://vercel.app</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://lunaro-bice.vercel.app/</loc>
   </url>
+
   <url>
-    <loc>https://vercel.appportfolio.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://lunaro-bice.vercel.app/services</loc>
   </url>
+
   <url>
-    <loc>https://vercel.appservices.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://lunaro-bice.vercel.app/portfolio</loc>
   </url>
+
   <url>
-    <loc>https://vercel.appabout.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://lunaro-bice.vercel.app/about</loc>
   </url>
+
   <url>
-    <loc>https://vercel.appcontact.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://lunaro-bice.vercel.app/contact</loc>
   </url>
+
+  <url>
+    <loc>https://lunaro-bice.vercel.app/faq</loc>
+  </url>
+
+  <url>
+    <loc>https://lunaro-bice.vercel.app/projects</loc>
+  </url>
+
 </urlset>
