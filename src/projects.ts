@@ -1,651 +1,293 @@
-export type Project = { id:string; name:string; category:string; description:string; image:string; alt:string; demo:boolean };
-export const projects: Project[] = [
-  {
-    "id": "project-01",
-    "name": "Nexa Commerce",
-    "category": "تطبيقات ويب",
-    "description": "تجربة تسوق عصرية لعلامة أزياء رقمية.",
-    "image": "/images/projects/01-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Nexa Commerce، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-02",
-    "name": "DineFlow",
-    "category": "تعليم",
-    "description": "منصة حجز طاولات وإدارة الطلبات.",
-    "image": "/images/projects/02-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع DineFlow، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-03",
-    "name": "Finora Dashboard",
-    "category": "مواقع شركات",
-    "description": "لوحة تحليل مالي تعرض المؤشرات بوضوح.",
-    "image": "/images/projects/03-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Finora Dashboard، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-04",
-    "name": "EduSpark",
-    "category": "تطبيقات موبايل",
-    "description": "منصة تعلم تفاعلي للدورات والطلاب.",
-    "image": "/images/projects/04-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع EduSpark، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-05",
-    "name": "Pulse Health",
-    "category": "خدمات رقمية",
-    "description": "واجهة متابعة المواعيد والعادات الصحية.",
-    "image": "/images/projects/05-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Pulse Health، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-06",
-    "name": "Orbit CRM",
-    "category": "لوحات تحكم",
-    "description": "نظام مبسط لإدارة علاقات العملاء.",
-    "image": "/images/projects/06-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Orbit CRM، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-07",
-    "name": "Nova Properties",
-    "category": "حجوزات",
-    "description": "واجهة استعراض عقارات مع بحث متقدم.",
-    "image": "/images/projects/07-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Nova Properties، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-08",
-    "name": "Swift Logistics",
-    "category": "متاجر إلكترونية",
-    "description": "لوحة متابعة الشحنات وحالات التسليم.",
-    "image": "/images/projects/08-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Swift Logistics، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-09",
-    "name": "Bloom Studio",
-    "category": "تطبيقات ويب",
-    "description": "موقع إبداعي لاستوديو تصميم مستقل.",
-    "image": "/images/projects/09-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Bloom Studio، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-10",
-    "name": "CloudDesk SaaS",
-    "category": "تعليم",
-    "description": "مساحة عمل سحابية للفرق الصغيرة.",
-    "image": "/images/projects/10-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CloudDesk SaaS، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-11",
-    "name": "FitTrack",
-    "category": "مواقع شركات",
-    "description": "تجربة رقمية لتنظيم خطط التدريب.",
-    "image": "/images/projects/11-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع FitTrack، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-12",
-    "name": "Luma Beauty",
-    "category": "تطبيقات موبايل",
-    "description": "كتالوج منتجات بتجربة شراء سلسة.",
-    "image": "/images/projects/12-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Luma Beauty، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-13",
-    "name": "TripNest",
-    "category": "خدمات رقمية",
-    "description": "منصة اكتشاف وجهات وحجز الرحلات.",
-    "image": "/images/projects/13-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع TripNest، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-14",
-    "name": "Craftly",
-    "category": "لوحات تحكم",
-    "description": "سوق للحرف والمنتجات المصنوعة يدويًا.",
-    "image": "/images/projects/14-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Craftly، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-15",
-    "name": "TaskPilot",
-    "category": "حجوزات",
-    "description": "لوحة لتنظيم المهام والمشروعات.",
-    "image": "/images/projects/15-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع TaskPilot، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-16",
-    "name": "Byte Academy",
-    "category": "متاجر إلكترونية",
-    "description": "مسارات تعليم البرمجة للمبتدئين.",
-    "image": "/images/projects/16-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Byte Academy، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-17",
-    "name": "GreenCart",
-    "category": "تطبيقات ويب",
-    "description": "تجربة تسوق للمنتجات الطازجة.",
-    "image": "/images/projects/17-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع GreenCart، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-18",
-    "name": "AutoLane",
-    "category": "تعليم",
-    "description": "كتالوج سيارات مع أدوات مقارنة.",
-    "image": "/images/projects/18-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع AutoLane، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-19",
-    "name": "Eventora",
-    "category": "مواقع شركات",
-    "description": "صفحة فعاليات ونظام تسجيل المشاركين.",
-    "image": "/images/projects/19-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Eventora، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-20",
-    "name": "PayBridge",
-    "category": "تطبيقات موبايل",
-    "description": "واجهة تصور مدفوعات رقمية.",
-    "image": "/images/projects/20-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع PayBridge، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-21",
-    "name": "MediBook",
-    "category": "خدمات رقمية",
-    "description": "نظام مواعيد للعيادات والتخصصات.",
-    "image": "/images/projects/21-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع MediBook، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-22",
-    "name": "Workly HR",
-    "category": "لوحات تحكم",
-    "description": "لوحة لإدارة الحضور وطلبات الإجازة.",
-    "image": "/images/projects/22-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Workly HR، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-23",
-    "name": "ArtSpace",
-    "category": "حجوزات",
-    "description": "معرض أعمال فني تفاعلي.",
-    "image": "/images/projects/23-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع ArtSpace، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-24",
-    "name": "MenuMint",
-    "category": "متاجر إلكترونية",
-    "description": "قائمة رقمية واضحة وسريعة.",
-    "image": "/images/projects/24-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع MenuMint، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-25",
-    "name": "RentLoop",
-    "category": "تطبيقات ويب",
-    "description": "منصة عرض وحجز المعدات.",
-    "image": "/images/projects/25-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع RentLoop، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-26",
-    "name": "SecureStack",
-    "category": "تعليم",
-    "description": "لوحة مراقبة أمنية توضيحية.",
-    "image": "/images/projects/26-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع SecureStack، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-27",
-    "name": "DataVista",
-    "category": "مواقع شركات",
-    "description": "لوحة مؤشرات وتقارير تفاعلية.",
-    "image": "/images/projects/27-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع DataVista، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-28",
-    "name": "ZenFinance",
-    "category": "تطبيقات موبايل",
-    "description": "واجهة لتنظيم الميزانية الشخصية.",
-    "image": "/images/projects/28-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع ZenFinance، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-29",
-    "name": "PetPal",
-    "category": "خدمات رقمية",
-    "description": "منصة خدمات ومواعيد للحيوانات الأليفة.",
-    "image": "/images/projects/29-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع PetPal، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-30",
-    "name": "BookHaven",
-    "category": "لوحات تحكم",
-    "description": "متجر كتب مع تصنيفات واكتشاف.",
-    "image": "/images/projects/30-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع BookHaven، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-31",
-    "name": "FreshMart",
-    "category": "حجوزات",
-    "description": "واجهة طلب احتياجات المنزل.",
-    "image": "/images/projects/31-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع FreshMart، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-32",
-    "name": "AeroTravel",
-    "category": "متاجر إلكترونية",
-    "description": "تجربة بحث عن الرحلات والإقامات.",
-    "image": "/images/projects/32-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع AeroTravel، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-33",
-    "name": "SkillSpring",
-    "category": "تطبيقات ويب",
-    "description": "منصة دورات ومسارات مهنية.",
-    "image": "/images/projects/33-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع SkillSpring، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-34",
-    "name": "LegalEase",
-    "category": "تعليم",
-    "description": "موقع تعريفي لمكتب خدمات قانونية.",
-    "image": "/images/projects/34-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع LegalEase، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-35",
-    "name": "BuildSphere",
-    "category": "مواقع شركات",
-    "description": "واجهة شركة مقاولات ومشروعاتها.",
-    "image": "/images/projects/35-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع BuildSphere، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-36",
-    "name": "Solaris Energy",
-    "category": "تطبيقات موبايل",
-    "description": "موقع حلول طاقة شمسية.",
-    "image": "/images/projects/36-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Solaris Energy، واجهة رقمية تجريبية",
-    "demo": true
+
+export interface Project {
+  id: string;
+  slug: string;
+  nameAr: string;
+  nameEn: string;
+  category:
+    | 'e-commerce'
+    | 'restaurants'
+    | 'corporate'
+    | 'automotive'
+    | 'beverage';
+  categoryAr: string;
+  categoryEn: string;
+  activityAr: string;
+  activityEn: string;
+  descriptionAr: string;
+  descriptionEn: string;
+  coverImage: string;
+  gallery: string[];
+  officialWebsite?: string;
+  liveUrl?: string;
+  featured: boolean;
+}
+
+export const projectsData: Project[] = [
+  {
+    id: 'activ',
+    slug: 'activ-sportswear',
+    nameAr: 'أكتيف للملابس الرياضية',
+    nameEn: 'ACTIV Sportswear',
+    category: 'e-commerce',
+    categoryAr: 'متجر إلكتروني',
+    categoryEn: 'E-commerce',
+    activityAr: 'الملابس الرياضية والأزياء',
+    activityEn: 'Sportswear & Apparel',
+    descriptionAr:
+      'متجر متخصص في الملابس الرياضية، يقدم تجربة رقمية لعرض التشكيلات والمنتجات والتصنيفات الخاصة بالعلامة التجارية.',
+    descriptionEn:
+      'A sportswear retail brand with a digital shopping experience showcasing its apparel collections and product categories.',
+    coverImage: '/images/projects/Activ.jfif',
+    gallery: ['/images/projects/Activ.jfif'],
+    officialWebsite: 'https://activ.eg',
+    featured: true,
+  },
+  {
+    id: 'town-team',
+    slug: 'town-team',
+    nameAr: 'تاون تيم',
+    nameEn: 'Town Team',
+    category: 'e-commerce',
+    categoryAr: 'متجر إلكتروني',
+    categoryEn: 'E-commerce',
+    activityAr: 'الملابس الشبابية والأزياء الرجالية',
+    activityEn: 'Men’s Fashion & Casual Wear',
+    descriptionAr:
+      'علامة تجارية متخصصة في الأزياء الرجالية والشبابية، مع تجربة تسوق رقمية لعرض المنتجات والتشكيلات المختلفة.',
+    descriptionEn:
+      'A fashion brand specializing in men’s and casual wear, with a digital shopping experience for its collections.',
+    coverImage: '/images/projects/TownTeam.jfif',
+    gallery: ['/images/projects/TownTeam.jfif'],
+    officialWebsite: 'https://townteam.com',
+    featured: true,
+  },
+  {
+    id: 'obour-land',
+    slug: 'obour-land',
+    nameAr: 'عبور لاند',
+    nameEn: 'Obour Land',
+    category: 'beverage',
+    categoryAr: 'الأغذية والمشروبات',
+    categoryEn: 'Food & Beverage',
+    activityAr: 'منتجات الألبان والأجبان والأغذية',
+    activityEn: 'Dairy, Cheese & Food Products',
+    descriptionAr:
+      'علامة تجارية مصرية متخصصة في الصناعات الغذائية ومنتجات الألبان، تشمل تشكيلتها الأجبان والمنتجات المصنعة والحليب والعصائر.',
+    descriptionEn:
+      'An Egyptian food manufacturer offering a diverse range of dairy and food products, including cheese, milk and juices.',
+    coverImage: '/images/projects/ObourLand.jfif',
+    gallery: ['/images/projects/ObourLand.jfif'],
+    officialWebsite: 'https://obourland.com',
+    featured: true,
+  },
+  {
+    id: 'remas-land',
+    slug: 'remas-land',
+    nameAr: 'ريماس لاند',
+    nameEn: 'Remas Land',
+    category: 'beverage',
+    categoryAr: 'الأغذية والمشروبات',
+    categoryEn: 'Food & Beverage',
+    activityAr: 'منتجات الألبان والأغذية',
+    activityEn: 'Dairy & Food Products',
+    descriptionAr:
+      'علامة تجارية متخصصة في صناعة منتجات الألبان، تقدم مجموعة متنوعة من المنتجات الغذائية مع اهتمام بجودة التصنيع والتوزيع.',
+    descriptionEn:
+      'A dairy and food brand offering a range of products, with a focus on product quality, manufacturing and distribution.',
+    coverImage: '/images/projects/RemasLand.jfif',
+    gallery: ['/images/projects/RemasLand.jfif'],
+    officialWebsite: 'https://remaslandeg.com',
+    featured: true,
+  },
+  {
+    id: 'kadoura',
+    slug: 'kadoura-seafood',
+    nameAr: 'أسماك قدورة',
+    nameEn: 'Kadoura Seafood',
+    category: 'restaurants',
+    categoryAr: 'مطاعم وأغذية',
+    categoryEn: 'Restaurants & Food',
+    activityAr: 'مطعم مأكولات بحرية',
+    activityEn: 'Seafood Restaurant',
+    descriptionAr:
+      'مطعم متخصص في المأكولات البحرية، يقدم تجربة طعام متنوعة مع قائمة من الأصناف البحرية ومعلومات الفروع والتواصل.',
+    descriptionEn:
+      'A seafood restaurant showcasing a variety of seafood dishes, restaurant information and branch details.',
+    coverImage: '/images/projects/Kadoura.jfif',
+    gallery: ['/images/projects/Kadoura.jfif'],
+    officialWebsite: 'https://kadoura.com',
+    featured: true,
+  },
+  {
+    id: 'el-abd',
+    slug: 'el-abd-patisserie',
+    nameAr: 'حلواني العبد',
+    nameEn: 'El Abd Patisserie',
+    category: 'restaurants',
+    categoryAr: 'مطاعم وأغذية',
+    categoryEn: 'Restaurants & Food',
+    activityAr: 'الحلويات والمخبوزات',
+    activityEn: 'Sweets & Bakery',
+    descriptionAr:
+      'علامة تجارية متخصصة في الحلويات والمخبوزات، تقدم تشكيلة متنوعة من المنتجات الشرقية والغربية والمخبوزات.',
+    descriptionEn:
+      'A well-known confectionery and bakery brand offering a variety of oriental sweets, western desserts and baked goods.',
+    coverImage: '/images/projects/ElAbd.jfif',
+    gallery: ['/images/projects/ElAbd.jfif'],
+    officialWebsite: 'https://elabdfoods.com',
+    featured: true,
+  },
+  {
+    id: 'abou-shakra',
+    slug: 'abou-shakra',
+    nameAr: 'مطعم أبو شقرة',
+    nameEn: 'Abou Shakra',
+    category: 'restaurants',
+    categoryAr: 'مطاعم وأغذية',
+    categoryEn: 'Restaurants & Food',
+    activityAr: 'المشويات والمأكولات المصرية',
+    activityEn: 'Egyptian Grills & Cuisine',
+    descriptionAr:
+      'علامة مطاعم متخصصة في المشويات والمأكولات المصرية، مع عرض هوية المطعم وقائمة الطعام ومعلومات الفروع.',
+    descriptionEn:
+      'An Egyptian restaurant brand specializing in grilled dishes and local cuisine, showcasing its menu and restaurant information.',
+    coverImage: '/images/projects/AbouShakra.jfif',
+    gallery: ['/images/projects/AbouShakra.jfif'],
+    officialWebsite: 'https://aboushakragroup.com',
+    featured: true,
+  },
+  {
+    id: 'fit-and-fix',
+    slug: 'fit-and-fix',
+    nameAr: 'فيت آند فيكس',
+    nameEn: 'Fit & Fix',
+    category: 'automotive',
+    categoryAr: 'السيارات والخدمات',
+    categoryEn: 'Automotive & Services',
+    activityAr: 'خدمات السيارات والصيانة والعناية',
+    activityEn: 'Automotive Maintenance & Care',
+    descriptionAr:
+      'علامة متخصصة في خدمات السيارات، تشمل الصيانة والعناية بالإطارات وخدمات العناية بالمركبات.',
+    descriptionEn:
+      'An automotive service brand offering vehicle maintenance, tyre care and related automotive services.',
+    coverImage: '/images/projects/FitAndFix.jfif',
+    gallery: ['/images/projects/FitAndFix.jfif'],
+    officialWebsite: 'https://fitandfix.com',
+    featured: true,
+  },
+  {
+    id: 'brothers-care',
+    slug: 'brothers-care',
+    nameAr: 'برازرز كير',
+    nameEn: 'Brothers Care',
+    category: 'automotive',
+    categoryAr: 'السيارات والخدمات',
+    categoryEn: 'Automotive & Services',
+    activityAr: 'منتجات العناية بالسيارات والتنظيف',
+    activityEn: 'Car Care & Cleaning Products',
+    descriptionAr:
+      'متجر متخصص في منتجات ومستلزمات العناية بالسيارات، بما يشمل منتجات التنظيف والتلميع ومعدات العناية بالمركبات.',
+    descriptionEn:
+      'A specialized store offering car care products, cleaning supplies, detailing accessories and vehicle care equipment.',
+    coverImage: '/images/projects/BrothersCare.jfif',
+    gallery: ['/images/projects/BrothersCare.jfif'],
+    officialWebsite: 'https://brothers.care',
+    featured: true,
+  },
+  {
+    id: 'al-hassan',
+    slug: 'al-hassan-contracting',
+    nameAr: 'الحسن للمقاولات',
+    nameEn: 'Al Hassan Contracting',
+    category: 'corporate',
+    categoryAr: 'مواقع الشركات',
+    categoryEn: 'Corporate Websites',
+    activityAr: 'المقاولات والتشطيبات والخدمات الهندسية',
+    activityEn: 'Contracting, Finishing & Engineering',
+    descriptionAr:
+      'شركة متخصصة في المقاولات والتشطيبات والخدمات الهندسية، مع عرض خدمات الشركة ومجالات عملها ومعلومات التواصل.',
+    descriptionEn:
+      'A contracting and engineering company specializing in construction and finishing services, presenting its services and company information.',
+    coverImage: '/images/projects/AlHassan.jfif',
+    gallery: ['/images/projects/AlHassan.jfif'],
+    officialWebsite: 'https://alhassancon.com',
+    featured: true,
+  },
+  {
+    id: 'method',
+    slug: 'method-agency',
+    nameAr: 'ميثود',
+    nameEn: 'Method',
+    category: 'corporate',
+    categoryAr: 'مواقع الشركات',
+    categoryEn: 'Corporate Websites',
+    activityAr: 'التسويق والخدمات الرقمية وتصميم المواقع',
+    activityEn: 'Digital Marketing & Web Design',
+    descriptionAr:
+      'شركة متخصصة في التسويق والخدمات الرقمية وتصميم المواقع، تعرض خدماتها وحلولها الرقمية ومعلومات التواصل.',
+    descriptionEn:
+      'A digital services company focused on marketing and web design, presenting its services and digital solutions.',
+    coverImage: '/images/projects/Method.jfif',
+    gallery: ['/images/projects/Method.jfif'],
+    officialWebsite: 'https://method.com.eg',
+    featured: true,
+  },
+  {
+    id: 'spiro-spathis',
+    slug: 'spiro-spathis',
+    nameAr: 'سبيرو سباتس',
+    nameEn: 'Spiro Spathis',
+    category: 'beverage',
+    categoryAr: 'الأغذية والمشروبات',
+    categoryEn: 'Food & Beverage',
+    activityAr: 'المشروبات الغازية والنكهات المتنوعة',
+    activityEn: 'Soft Drinks & Flavored Beverages',
+    descriptionAr:
+      'علامة مصرية عريقة في صناعة المشروبات الغازية، تجمع بين تاريخ طويل من صناعة المشروبات وتشكيلة متنوعة من النكهات.',
+    descriptionEn:
+      'A historic Egyptian soft drink brand with a long heritage in beverage production and a variety of distinctive flavors.',
+    coverImage: '/images/projects/SpiroSpathis.jfif',
+    gallery: ['/images/projects/SpiroSpathis.jfif'],
+    officialWebsite: 'https://www.spirospathis.com',
+    featured: true,
+  },
+  {
+    id: 'sachi',
+    slug: 'sachi-restaurant',
+    nameAr: 'ساشي',
+    nameEn: 'Sachi',
+    category: 'restaurants',
+    categoryAr: 'مطاعم وأغذية',
+    categoryEn: 'Restaurants & Food',
+    activityAr: 'مطعم للمأكولات المتوسطية والآسيوية',
+    activityEn: 'Mediterranean & Asian Restaurant',
+    descriptionAr:
+      'علامة مطاعم راقية تقدم تجربة طعام تجمع بين النكهات المتوسطية والآسيوية، مع اهتمام بتفاصيل الضيافة والأجواء.',
+    descriptionEn:
+      'A fine dining restaurant brand combining Mediterranean and Asian culinary influences with a distinctive hospitality experience.',
+    coverImage: '/images/projects/Sachi.jfif',
+    gallery: ['/images/projects/Sachi.jfif'],
+    officialWebsite: 'https://www.sachirestaurant.com',
+    featured: true,
+  },
+  {
+    id: 'kazoku',
+    slug: 'kazoku-restaurant',
+    nameAr: 'كازوكو',
+    nameEn: 'Kazoku',
+    category: 'restaurants',
+    categoryAr: 'مطاعم وأغذية',
+    categoryEn: 'Restaurants & Food',
+    activityAr: 'مطعم للمأكولات اليابانية',
+    activityEn: 'Japanese Restaurant',
+    descriptionAr:
+      'علامة مطاعم تقدم تجربة طعام يابانية معاصرة، وتركز على الأطباق اليابانية وأجواء تناول الطعام المميزة.',
+    descriptionEn:
+      'A contemporary Japanese dining concept focused on Japanese cuisine and a distinctive restaurant atmosphere.',
+    coverImage: '/images/projects/Kazoku.jfif',
+    gallery: ['/images/projects/Kazoku.jfif'],
+    officialWebsite: 'https://www.kazokuegypt.com',
+    featured: true,
   },
-  {
-    "id": "project-37",
-    "name": "PixelForge",
-    "category": "خدمات رقمية",
-    "description": "معرض خدمات رقمية وهوية بصرية.",
-    "image": "/images/projects/37-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع PixelForge، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-38",
-    "name": "CareConnect",
-    "category": "لوحات تحكم",
-    "description": "بوابة معلومات وخدمات صحية.",
-    "image": "/images/projects/38-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CareConnect، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-39",
-    "name": "MarketPulse",
-    "category": "حجوزات",
-    "description": "لوحة تصور بيانات السوق.",
-    "image": "/images/projects/39-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع MarketPulse، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-40",
-    "name": "ShopSphere",
-    "category": "متاجر إلكترونية",
-    "description": "واجهة متجر متعدد الأقسام.",
-    "image": "/images/projects/40-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع ShopSphere، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-41",
-    "name": "QuickServe",
-    "category": "تطبيقات ويب",
-    "description": "تطبيق لتنسيق الطلبات اليومية.",
-    "image": "/images/projects/41-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع QuickServe، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-42",
-    "name": "LingoLoop",
-    "category": "تعليم",
-    "description": "منصة تدريب لغوي قصيرة.",
-    "image": "/images/projects/42-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع LingoLoop، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-43",
-    "name": "StudioFrame",
-    "category": "مواقع شركات",
-    "description": "موقع معرض أعمال تصوير.",
-    "image": "/images/projects/43-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع StudioFrame، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-44",
-    "name": "VenuePro",
-    "category": "تطبيقات موبايل",
-    "description": "منصة استعراض وحجز القاعات.",
-    "image": "/images/projects/44-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع VenuePro، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-45",
-    "name": "Fleetwise",
-    "category": "خدمات رقمية",
-    "description": "لوحة متابعة المركبات والرحلات.",
-    "image": "/images/projects/45-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Fleetwise، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-46",
-    "name": "InvoiceFlow",
-    "category": "لوحات تحكم",
-    "description": "أداة إنشاء فواتير ومتابعة المدفوعات.",
-    "image": "/images/projects/46-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع InvoiceFlow، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-47",
-    "name": "CloudVault",
-    "category": "حجوزات",
-    "description": "واجهة ملفات رقمية منظمة.",
-    "image": "/images/projects/47-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CloudVault، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-48",
-    "name": "LeadOrbit",
-    "category": "متاجر إلكترونية",
-    "description": "لوحة متابعة العملاء المحتملين.",
-    "image": "/images/projects/48-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع LeadOrbit، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-49",
-    "name": "FoodDash Concept",
-    "category": "تطبيقات ويب",
-    "description": "تصميم تجريبي لتجربة توصيل الطعام.",
-    "image": "/images/projects/49-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع FoodDash Concept، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-50",
-    "name": "StyleGrid",
-    "category": "تعليم",
-    "description": "كتالوج أزياء بتخطيط شبكي.",
-    "image": "/images/projects/50-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع StyleGrid، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-51",
-    "name": "HomeNest",
-    "category": "مواقع شركات",
-    "description": "واجهة خدمات تصميم المساحات.",
-    "image": "/images/projects/51-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع HomeNest، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-52",
-    "name": "MedTrack",
-    "category": "تطبيقات موبايل",
-    "description": "لوحة تنظيم بيانات ومواعيد طبية.",
-    "image": "/images/projects/52-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع MedTrack، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-53",
-    "name": "LearnDeck",
-    "category": "خدمات رقمية",
-    "description": "لوحة للمدرسين ومتابعة التقدم.",
-    "image": "/images/projects/53-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع LearnDeck، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-54",
-    "name": "CryptoLens Concept",
-    "category": "لوحات تحكم",
-    "description": "تصور واجهة بيانات أصول رقمية.",
-    "image": "/images/projects/54-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CryptoLens Concept، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-55",
-    "name": "CreatorHub",
-    "category": "حجوزات",
-    "description": "مساحة لإدارة المحتوى والمشروعات.",
-    "image": "/images/projects/55-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CreatorHub، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-56",
-    "name": "TeamSync",
-    "category": "متاجر إلكترونية",
-    "description": "لوحة تعاون ومهام للفريق.",
-    "image": "/images/projects/56-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع TeamSync، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-57",
-    "name": "BrightDental",
-    "category": "تطبيقات ويب",
-    "description": "موقع تعريفي وحجز استشارة.",
-    "image": "/images/projects/57-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع BrightDental، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-58",
-    "name": "UrbanMove",
-    "category": "تعليم",
-    "description": "واجهة خدمات تنقل داخل المدن.",
-    "image": "/images/projects/58-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع UrbanMove، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-59",
-    "name": "AquaPure",
-    "category": "مواقع شركات",
-    "description": "موقع حلول تنقية المياه.",
-    "image": "/images/projects/59-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع AquaPure، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-60",
-    "name": "FarmLink",
-    "category": "تطبيقات موبايل",
-    "description": "منصة ربط المزارع بالأسواق.",
-    "image": "/images/projects/60-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع FarmLink، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-61",
-    "name": "Muse Gallery",
-    "category": "خدمات رقمية",
-    "description": "معرض رقمي للأعمال الفنية.",
-    "image": "/images/projects/61-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Muse Gallery، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-62",
-    "name": "TicketNest",
-    "category": "لوحات تحكم",
-    "description": "واجهة حجز تذاكر الفعاليات.",
-    "image": "/images/projects/62-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع TicketNest، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-63",
-    "name": "CloudKitchen",
-    "category": "حجوزات",
-    "description": "لوحة لطلبات المطابخ السحابية.",
-    "image": "/images/projects/63-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع CloudKitchen، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-64",
-    "name": "BizPilot",
-    "category": "متاجر إلكترونية",
-    "description": "لوحة مؤشرات للمشروعات الصغيرة.",
-    "image": "/images/projects/64-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع BizPilot، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-65",
-    "name": "SnapPortfolio",
-    "category": "تطبيقات ويب",
-    "description": "قالب ملف أعمال للمبدعين.",
-    "image": "/images/projects/65-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع SnapPortfolio، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-66",
-    "name": "Careersly",
-    "category": "تعليم",
-    "description": "منصة عرض فرص العمل والتقديم.",
-    "image": "/images/projects/66-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Careersly، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-67",
-    "name": "LocalLoop",
-    "category": "مواقع شركات",
-    "description": "دليل خدمات محلية بواجهة حديثة.",
-    "image": "/images/projects/67-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع LocalLoop، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-68",
-    "name": "Aster Finance",
-    "category": "تطبيقات موبايل",
-    "description": "لوحة تخطيط مالي للأعمال.",
-    "image": "/images/projects/68-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Aster Finance، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-69",
-    "name": "FlowOps",
-    "category": "خدمات رقمية",
-    "description": "لوحة متابعة سير العمل.",
-    "image": "/images/projects/69-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع FlowOps، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-70",
-    "name": "Lunaro Studio",
-    "category": "لوحات تحكم",
-    "description": "تصور تجريبي لاستوديو لونارو.",
-    "image": "/images/projects/70-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Lunaro Studio، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-71",
-    "name": "Orbit Commerce Concept",
-    "category": "حجوزات",
-    "description": "تصور تجريبي إضافي لمنصة تجارة رقمية.",
-    "image": "/images/projects/71-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Orbit Commerce Concept، واجهة رقمية تجريبية",
-    "demo": true
-  },
-  {
-    "id": "project-72",
-    "name": "Orbit Commerce Concept",
-    "category": "متاجر إلكترونية",
-    "description": "تصور تجريبي إضافي لمنصة تجارة رقمية.",
-    "image": "/images/projects/72-project-preview.webp",
-    "alt": "صورة توضيحية لمشروع Orbit Commerce Concept، واجهة رقمية تجريبية",
-    "demo": true
-  }
 ];
