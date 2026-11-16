@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://lunaro-tech-mauve.vercel.app/sitemap.xml
+
